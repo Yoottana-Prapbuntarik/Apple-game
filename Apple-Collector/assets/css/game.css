@@ -1,0 +1,51 @@
+#scene{
+    width: 400px;
+    height: 400px;
+    background-color: #aaf;
+    margin: 16px auto;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, .1),-2px 2px 4px rgba(0  , 0, 0, 0.1);
+}
+#tree{
+    position: absolute;
+    width: 200px;
+    bottom: 80px;
+    left:100px ;
+}
+#ground{
+    position: absolute;
+    width: 400px;
+    bottom: 0;
+}
+.apple{
+    position: absolute;
+    width:16px;
+    height: auto;
+    transition: top .5s ease ;
+}
+#scoreboard{
+    width: 400px;
+    margin: 4px auto;
+    padding: 0;
+    background-color: #befbff;
+}
+#scoreboard::after{
+    clear: both;
+    display: block;
+    content: "";
+}
+#scoreboard li{
+    list-style: none;
+    box-sizing: border-box;
+    width: 33%;
+    padding: 4px;
+    text-align: center;
+    float: left;
+}
+span{
+    color: rgb(105, 81, 238);
+}
+p{
+    text-align: center;
+}

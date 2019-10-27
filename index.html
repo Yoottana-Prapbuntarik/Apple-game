@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Keep Apple Game</title>
+    <link rel="stylesheet" href="Apple-Collector/assets/css/game.css"/>
+</head>
+
+<body>
+    <ul id="scoreboard">
+        <li>
+            time : <span id="time">30</span>
+        </li>
+        <li>
+           <button onclick="StartGame();" id="btn">Start</button>
+        </li>
+        <li>
+            <span id="score">0</span>
+            
+        </li>
+    </ul>
+    <div  id="scene">
+        <img src="Apple-Collector/assets/sprites/ground.png" alt="ground" id="ground"/>
+        <img src="Apple-Collector/assets/sprites/tree.png" alt="tree" id="tree"/>
+        <img style="top: 200px;left: 120px;" class="apple" src="Apple-Collector/assets/sprites/apple.png" alt="apple" id="apple" onclick="fallDown(this)"/>
+        <img style="top: 185px;left: 145px;" class="apple" src="Apple-Collector/assets/sprites/apple.png" alt="apple" id="apple" onclick="fallDown(this)"/>
+        <img style="top: 180px;left: 200px;" class="apple" src="Apple-Collector/assets/sprites/apple.png" alt="apple" id="apple" onclick="fallDown(this)"/>
+        <img style="top: 204px;left: 170px;" class="apple" src="Apple-Collector/assets/sprites/apple.png" alt="apple" id="apple" onclick="fallDown(this)"/>
+        <img style="top: 203px;left: 250px;" class="apple" src="Apple-Collector/assets/sprites/apple.png" alt="apple" id="apple" onclick="fallDown(this)"/>
+        
+    </div>   
+    <p style="width:400px; margin:0 auto;"><span id="high">High : 0</span></p>
+    <script src="Apple-Collector/assets/js/Controller.js"></script>
+</body>
+
+</html>
